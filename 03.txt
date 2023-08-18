@@ -1,0 +1,37 @@
+3.send
+a)コマンドの定期実行
+crontab -e
+*/10 * * * * 'python ex05.py'
+
+b)
+ローカルにデータを保存するのは，通常ファイル書き込みでよいと思う．
+ambientとかremoとか紹介
+
+c)
+GoogleDriveの，下のシートにデータを送信する．
+https://docs.google.com/spreadsheets/d/1JryNLrmnp1clU0D13GX2CSmLPC0o8Vza5Brm90mlves
+
+データのアップロード用GASは以下に用意した
+function doGet(e) {
+  var spreadsheet = SpreadsheetApp.openById('1JryNLrmnp1clU0D13GX2CSmLPC0o8Vza5Brm90mlves');
+  var sheet = spreadsheet.getSheetByName('data');
+  var lastRow = sheet.getLastRow();
+  const range = sheet.getRange(lastRow+1, 1, 1, 3)
+  range.setValues([[e.parameter.a, e.parameter.b, new Date()]])
+  return  ContentService.createTextOutput('THX');
+}
+https://script.google.com/macros/s/AKfycbw_tD7dG8MXPW7OecLeZBdFmxGXvj1qflT1UGviN1mX70jltowKj3CIcJjHDeO-33c16Q/exec
+
+午前中はexecの後ろにデータをa=として，名前をb=として送信してお昼ご飯にする．
+pythonからの送信は次のようなコードになる．
+
+import urllib
+url = "http://example.com" 
+params = {"a": データ, "b": "あなたの名前だ"}    
+query_string = urllib.parse.urlencode( params ) 	
+url = url urllib.request.urlopen( url+"?"+query_string)
+
+名前がシートに記入されていることを確認（２回目の出欠）し，１時まで休憩．（１時に始めるからね）
+
+追加課題)crontabを設定して，上のパイソンコードを12:30に（つまり昼ごはん中に自動で）起動し，
+適当なデータと名前がシートに記録されるように設定する．（名前部分に，例えば「気圧測定結果」のようにコメントしてくれても良いが，評価の都合上必ず名前がわかるようにしておいて下さい．）

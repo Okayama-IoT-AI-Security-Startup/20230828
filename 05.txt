@@ -1,0 +1,18 @@
+5.openCV
+a)
+$python -m pip install opencv-python
+$python -c "import cv2"
+
+b)
+wget https://github.com/opencv/opencv/raw/4.x/data/haarcascades/haarcascade_frontalface_alt.xml
+wget https://github.com/opencv/opencv/raw/4.x/samples/data/lena.jpg
+
+c)
+正面検出(ex21.py)
+
+d)
+ついでに物体検出(ex22.py)
+wget https://github.com/rdeepc/ExploreOpencvDnn/raw/master/main.py
+wget https://github.com/rdeepc/ExploreOpencvDnn/raw/master/image.jpeg
+wget https://github.com/rdeepc/ExploreOpencvDnn/raw/master/models/frozen_inference_graph.pb
+wget https://github.com/rdeepc/ExploreOpencvDnn/raw/master/models/ssd_mobilenet_v2_coco_2018_03_29.pbtxt

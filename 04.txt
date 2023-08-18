@@ -1,0 +1,11 @@
+4.Image
+a)
+PILLOW
+Webカメラをつけて画像を取り込み，PILLOWで処理する(ex11.py)
+画像の一部の色を変える(ex12.py)
+b)Numpy
+同じことをNumpyで行う(ex13.py)
+c)Matplotlib
+グラフを画く(ex14.py)
+画像を表示する(ex15.py)
+3Dグラフを画く(ex16.py)

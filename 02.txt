@@ -1,0 +1,56 @@
+2.Python
+a)
+memo.逐次処理と一括処理
+インタープリターから実行するには
+python
+>>>print("Hello World")
+>>>exit()
+pythonファイルを実行するには
+nano ex01.py
+print("Hello World")
+ctrl-o,[enter],[enter],ctrl+x
+python ex01.py
+
+b)
+>>>import RPi.GPIO as GPIO
+>>>GPIO.setmode(GPIO.BCM)
+>>>GPIO.setup(17, GPIO.out)
+>>>GPIO.output(17, True)
+>>>GPIO.output(17, False)
+>>>GPIO.cleanup()
+
+c)
+DHT11
+import RPi.GPIO as GPIO
+import dht11
+
+GPIO.setmode(GPIO.BCM)
+GPIO.cleanup()
+
+instance = dht11.DHT11(pin:=14)
+result = instance.read()
+
+print(result.is_valid())
+print(f"T: {result.temperature:3.1f}C")
+print(f"H: {result.humidity:3.1f}%")
+
+d)
+リレー
+
+e)
+超音波距離センサー
+ex04
+
+f)
+気圧センサー
+wget  https://osoyoo.com/driver/Adafruit_Python_BMP.tar.gz
+sudo tar zxvf  Adafruit_Python_BMP.tar.gz
+sudo tar xvf Adafruit_Python_BMP.tar
+sudo raspi-configからI2Cを有効に
+cd   Adafruit_Python_BMP
+sudo python  setup.py  install
+cf.)$i2cdetect -y 1
+
+終わったら適当に休憩しますが，次の時間にGoogleDriveのワ＝クシートにデータの記入をするサンプルをデモします．
+もしPCを持ってきていてグーグルのアカウントがあって，やってみたい人はチャレンジしても良いので，PCの準備をしておいてください．
+やらなくていいよ．

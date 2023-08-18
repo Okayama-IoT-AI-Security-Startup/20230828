@@ -1,0 +1,23 @@
+1.Config
+a)
+memo.本日の演習は，LinuxOSとプログラミング言語Pythonの使い方を試していく．
+IoT機器としてラズベリーパイという小型のPCを使用する．このOSはラズベリーパイOSという専用のOSであるが，Linux系列のOSである．1時間目は10時までを想定し，ラズベリーパイをPCとして使用するために画面，キーボード，マウス等を接続し，ネットワークを確保する．
+ラズパイのユーザ名，パスワード，ホスト名を変更（あるいは確認）し，アクセスポイントに接続したら，以下のアドレスからグーグルフォームにアクセスし，朝の出欠をとる．
+
+https://forms.gle/dRkwQLefMeW5MF6F8
+
+b)
+memo.Linuxコマンドをいくつか試す．
+ターミナルを立ち上げてコマンドラインからコマンドを試す．
+pwd, ls, dir, cd /, cd~, (cat), (nano), ifconfig, ping, [wget], [curl], df -h --total, 
+vcgencmd measure_temp, sudo raspi-config
+追加課題)sed,grep,awkを使用してdfコマンドからディスク使用率の数字のみを取り出す
+
+c)
+memo.準備完了し，ラズパイがIoT機器として使えることを確認する．LEDを接続しコマンドラインから
+$ raspi-gpio set 17 op
+$ raspi-gpio set 17 dh
+$ raspi-gpio set 17 dl
+ピン番号は$pinoutで確認できるらしい（https://www.bioerrorlog.work/entry/raspberry-pi-pinout）
+
+配線はそのまま，2時間目はパイソンから触っていきます
