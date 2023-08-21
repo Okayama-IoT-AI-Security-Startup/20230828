@@ -1,0 +1,7 @@
+演習題目
+1.txt 設定(Linux)
+2.txt Python/GPIO
+3.txt ネットワーク
+4.txt Image
+5.txt OpenCV
+6.txt MEdiaPIPE
