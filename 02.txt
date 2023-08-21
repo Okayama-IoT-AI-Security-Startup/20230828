@@ -36,6 +36,7 @@ print(f"H: {result.humidity:3.1f}%")
 
 d)
 リレー
+https://osoyoo.com/wp-content/uploads/2017/06/Relay-LED.png
 
 e)
 超音波距離センサー
