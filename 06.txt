@@ -1,1 +1,18 @@
 6.MediaPIPE
+Googleで開発を主導しているオープンソースの機械学習ライブラリー。
+a)
+$sudo pip install mediapipe​
+$pip install -U protobuf~=3.20.0
+see -> mediapipe/python/solutions
+
+b)
+手を検出．（静止画）
+ex23.py
+
+c)
+手を検出．（静止画）ex23.py
+手を検出．（動画から）ex24.py
+
+d)
+顔を検出 ex25.py
+マスクを描く ex26.py
