@@ -1,3 +1,6 @@
+# matplotlib 3D（鞍点）グラフサンプル
+# plotのviewer（plt.show）をお楽しみ下さい
+
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
