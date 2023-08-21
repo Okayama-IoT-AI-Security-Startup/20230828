@@ -10,9 +10,14 @@ b)
 ex23.py
 
 c)
-手を検出．（静止画）ex23.py
+手を検出．（静止画）ex23.pyを元にして
 手を検出．（動画から）ex24.py
+Webカメラから画像を取り込み，表示する
+線を描画するのにユーティリティがあるよ．
 
 d)
 顔を検出 ex25.py
 マスクを描く ex26.py
+又は猫耳をつける
+ランドマーク番号は，以下を参照
+https://github.com/google/mediapipe/blob/master/mediapipe/modules/face_geometry/data/canonical_face_model_uv_visualization.png
