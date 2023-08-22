@@ -1,7 +1,9 @@
 4.Image
 a)
 PILLOW
-Webカメラをつけて画像を取り込み，PILLOWで処理する(ex11.py)
+Webカメラをつけて画像を取り込む（ホームに名前を変えてコピー）
+  (cpコマンド，タブキーによる補完)
+PILLOWで処理する(ex11.py)
 画像の一部の色を変える(ex12.py)
 b)Numpy
 同じことをNumpyで行う(ex13.py)
