@@ -1,5 +1,8 @@
 from PIL import Image, ImageDraw
 import time
+
+start = time.perf_counter()
+
 img = Image.open('1.png')
 w, h = img.size
 
