@@ -18,6 +18,7 @@ vcgencmd measure_temp, sudo raspi-config
 
 c)
 memo.準備完了し，ラズパイがIoT機器として使えることを確認する．LEDを接続しコマンドラインから
+LEDのマイナスは，足の短い方/切り欠きのあるほう
 $ raspi-gpio set 17 op
 $ raspi-gpio set 17 dh
 $ raspi-gpio set 17 dl
