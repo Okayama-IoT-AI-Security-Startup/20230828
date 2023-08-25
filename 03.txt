@@ -25,11 +25,8 @@ https://script.google.com/macros/s/AKfycbw_tD7dG8MXPW7OecLeZBdFmxGXvj1qflT1UGviN
 午前中はexecの後ろにデータをa=として，名前をb=として送信してお昼ご飯にする．
 pythonからの送信は次のようなコードになる．
 
-import urllib
-url = "http://example.com" 
-params = {"a": データ, "b": "あなたの名前だ"}    
-query_string = urllib.parse.urlencode( params ) 	
-url = url urllib.request.urlopen( url+"?"+query_string)
+import requests
+request.get("https://script.google.com/macros/s/AKfycbw_tD7dG8MXPW7OecLeZBdFmxGXvj1qflT1UGviN1mX70jltowKj3CIcJjHDeO-33c16Q/exec?a=...&b=...")
 
 名前がシートに記入されていることを確認（２回目の出欠）し，１時まで休憩．（１時に始めるからね）
 
