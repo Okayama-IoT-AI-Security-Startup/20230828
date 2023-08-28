@@ -19,9 +19,9 @@ def read_distance():
     while GPIO.input(Echo) == GPIO.HIGH:
         sig_on = time.time()
 
-    duration = sig_off - sig_on
+    duration = sig_on - sig_off
     distance = duration * 34000 / 2
     return distance
 
 
-print("distance=", int(cm), "cm")
+print("distance=", int(read_distance()), "cm")
