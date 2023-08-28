@@ -19,7 +19,7 @@ with mp_face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_confidence
     if results.multi_face_landmarks:
       for face_landmarks in results.multi_face_landmarks:
          wks=np.array([[int(face_landmarks.landmark[i].x*w), int(face_landmarks.landmark[i].y*h)] for i in masks])
-         cv2.fillConvexPoly(image, wks, color=(200, 200, 20np.array0))
+         cv2.fillConvexPoly(image, wks, color=(200, 200, 200))
     cv2.imshow('MediaPipe FaceMesh', image)
     if cv2.waitKey(5) & 0xFF == ord('q'):
       break
